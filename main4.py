@@ -1,4 +1,3 @@
-# Data performa proyek IT perusahaan
 data_proyek = [
     {"kode": "PRJ-01", "nama": "Sistem ERP Rumah Sakit", "pendapatan": 150000000, "biaya": 90000000, "target_profit": 50000000},
     {"kode": "PRJ-02", "nama": "Aplikasi E-Commerce", "pendapatan": 80000000, "biaya": 85000000, "target_profit": 20000000},
@@ -24,7 +23,6 @@ jumlah_proyek_sukses = 0
 
 print("================= LAPORAN FINANSIAL PROYEK =================")
 
-# 3. JALANKAN LOOP UNTUK MEMPROSES SETIAP PROYEK
 for proj in data_proyek:
     kode = proj["kode"]
     nama = proj["nama"]
@@ -39,7 +37,6 @@ for proj in data_proyek:
     if status_proyek == "SUKSES TARGET":
         jumlah_proyek_sukses += 1
     
-    # D. Cetak detail laporan proyek
     print(f"Kode: {kode} | Nama: {nama} | Pendapatan: Rp{pend:,} | Biaya: Rp{biaya:,} | Profit Bersih: Rp{profit_bersih:,} | Status: {status_proyek}")
 
 print("============================================================")

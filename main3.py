@@ -1,4 +1,3 @@
-# Data log akses ke server utama
 log_akses = [
     {"ip": "192.168.1.10", "user": "admin", "status": "Sukses"},
     {"ip": "10.0.0.5", "user": "staff_it", "status": "Gagal"},

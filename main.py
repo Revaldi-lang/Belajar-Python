@@ -22,15 +22,11 @@ for trx in data_penjualan:
     produk = trx["produk"]
     harga = trx["total_harga"]
     
-    # A. Panggil fungsi cek_kategori_transaksi di sini
     kategori = cek_kategori_transaksi(harga)
     
-    # B. Tambahkan harga transaksi saat ini ke variabel total_pendapatan
     total_pendapatan += harga
     
-    # C. Cetak detail transaksi
     print(f"ID: {id_trx}, Produk: {produk}, Harga: Rp{harga:,}, Kategori: {kategori}")
 
 print("=================================")
-# 4. CETAK TOTAL PENDAPATAN AKHIR DI SINI
 print(f"Total Pendapatan: Rp{total_pendapatan:,}")
