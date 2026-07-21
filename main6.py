@@ -1,4 +1,3 @@
-# Data log mentah (List berisi kumpulan Tuple)
 log_pengunjung = [
     ("Revaldi", "Lihat Nilai"),
     ("Fadjar", "Pengisian KRS"),
