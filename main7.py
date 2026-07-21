@@ -11,12 +11,9 @@ try:
 
 except ValueError:
     print("Input tidak valid. Silakan masukkan angka untuk total biaya dan jumlah SKS.")
-    pass
 
 except ZeroDivisionError:
-    if jumlah_sks == 0:
-        print("Jumlah SKS tidak boleh 0. Silakan masukkan jumlah SKS yang valid.")
-    pass
+    print("Jumlah SKS tidak boleh nol. Silakan masukkan jumlah SKS yang valid.")
 
 finally:
     print("=== Sesi Perhitungan Selesai ===")
